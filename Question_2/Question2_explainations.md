@@ -51,6 +51,7 @@ cat "$report"
 
 Once this shell script was created in my Kali Linux, I saved it in my Kali Desktop, changed directory to Desktop, and used the command "chmod +x loganalysis.sh" to give my current user account permission to execute the file.
 
-1[image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/3e6382a271af7e928cec0e4fc6bf5605172ccc07/Question_2/images/Screenshot%202026-02-05%20223830.png)
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/3e6382a271af7e928cec0e4fc6bf5605172ccc07/Question_2/images/Screenshot%202026-02-05%20223830.png)
 
 I then proceeded to use the command "./loganalysis.sh systemlog.log". The shell script created worked perfectly and provided the proper txt report file with all the required details. Screenshot (763)
+
