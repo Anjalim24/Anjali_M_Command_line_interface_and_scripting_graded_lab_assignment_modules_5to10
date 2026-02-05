@@ -1,6 +1,7 @@
 Answer 1 Explanation
+
 The shell script in the analyze.sh file has been written and executed in my Kali Linux VM to check if it was working. You can find a detailed explanation for every command executed to check whether each of the shell script blocks is working. 
-Screenshot (752)
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/7abfb5f0261c8dd6aba8db3accf9bb5ab4f93cf5/Question_1/image.png)
 
 The first thing I did after creating the analyze.sh file with the complete script in it is go to the Kali command line and changed the directory to Desktop (cd Desktop), where the file was saved.
 
@@ -43,5 +44,6 @@ echo "Total files: $(ls -l "$1" | grep "^-" | wc -l)"
 echo ".txt files: $(ls "$1"/*.txt 2>/dev/null | wc -l)"
 
 I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. The first image shows my Download directory results with no .txt files, and the second image shows the result after I added a txt file. Screenshot (756) Screenshot (757)
+
 
 For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
