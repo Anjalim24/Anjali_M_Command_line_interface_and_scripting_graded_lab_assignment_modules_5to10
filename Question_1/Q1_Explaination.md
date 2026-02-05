@@ -43,7 +43,8 @@ echo "Words: $(wc -w < "$1")"
 echo "Characters: $(wc -c < "$1")"<code>
 
 
-I used the command ./analyze.sh bandit to analyze the file name bandit. The result I got is given in the screenshot below: Screenshot (754)
+I used the command ./analyze.sh bandit to analyze the file name bandit. The result I got is given in the screenshot below:
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/ea3debd655b1340329c158b72637dd1c6120d6e4/Question_1/Screenshot%202026-02-05%20221857.png)
 
 If it was not a file, it will move on to the final part that checks if it's a directory
 
@@ -58,6 +59,7 @@ I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. 
 
 
 For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
+
 
 
 
