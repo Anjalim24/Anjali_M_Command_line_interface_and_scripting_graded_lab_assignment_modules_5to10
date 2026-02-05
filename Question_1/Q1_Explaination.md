@@ -62,7 +62,10 @@ I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. 
 ![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/a137ab946792967f15aee9f1e86efc4b1b37de01/Question_1/Screenshot%202026-02-05%20222718.png)
 
 
-For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
+For additional checks, I have also analyzed an empty file and an empty directory:
+
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/a96bb4dbef61a2cd9144a239ee449835a2e4f2eb/Question_1/Screenshot%202026-02-05%20222851.png)
+
 
 
 
