@@ -16,7 +16,7 @@ The first block of the shell script is to check for exactly one argument:
 <code>if [ $# -ne 1 ]; then
 echo "Error: Please provide exactly one argument."
 exit 1
-fi<code>
+fi</code>
 
 
 I used the command ./analyze.sh bandit ~/Downloads to analyze a file named "bandit" and a directory name "Downloads". The script is instructed to show an error message if there's more than one argument, and it does its job. Since there's two arguments given in the command, it shows the error message.
@@ -28,7 +28,7 @@ On the above image, you can see that I also used the command ./analyze.sh Downlo
 <code>if [ ! -e "$1" ]; then
 echo "Error: Path does not exist."
 exit 1
-fi<code>
+fi</code>
 
 
 Since I'm in the Desktop directory and there's no direct pathway to Downloads from there unless I include the complete pathway ~/Downloads, it shows an error, just as the script instructs it to, because the path Downloads doesn't exist in the Desktop directory.
@@ -40,7 +40,7 @@ The third part of the script checks if it's a file.
 echo "File Analysis:"
 echo "Lines: $(wc -l < "$1")"
 echo "Words: $(wc -w < "$1")"
-echo "Characters: $(wc -c < "$1")"<code>
+echo "Characters: $(wc -c < "$1")"</code>
 
 
 I used the command ./analyze.sh bandit to analyze the file name bandit. The result I got is given in the screenshot below:
@@ -52,13 +52,14 @@ If it was not a file, it will move on to the final part that checks if it's a di
 <code>elif [ -d "$1" ]; then
 echo "Directory Analysis:"
 echo "Total files: $(ls -l "$1" | grep "^-" | wc -l)"
-echo ".txt files: $(ls "$1"/*.txt 2>/dev/null | wc -l)"<code>
+echo ".txt files: $(ls "$1"/*.txt 2>/dev/null | wc -l)"</code>
 
 
 I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. The first image shows my Download directory results with no .txt files, and the second image shows the result after I added a txt file. Screenshot (756) Screenshot (757)
 
 
 For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
+
 
 
 
