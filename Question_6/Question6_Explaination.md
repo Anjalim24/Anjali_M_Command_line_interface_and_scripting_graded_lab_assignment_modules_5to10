@@ -35,8 +35,11 @@ Then I created the input.txt file:
 
 ![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/32f4694ed1203f9dc9a22455d7940cf3dbacd411/Question_6/images6/Screenshot%202026-02-05%20231510.png)
 
-And finally, used the command chmod to give permission to execute the shell script and executed it using ./metrics.sh input.txt Screenshot (774)
+And finally, used the command chmod to give permission to execute the shell script and executed it using ./metrics.sh input.txt 
+
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/e4928a4511c6c53e0ed306acc51f043ad197c750/Question_6/images6/Screenshot%202026-02-05%20231624.png)
 
 
 The output gave the longest word, the shortest word, average word length, and total unique words. The shell script worked!
+
 
