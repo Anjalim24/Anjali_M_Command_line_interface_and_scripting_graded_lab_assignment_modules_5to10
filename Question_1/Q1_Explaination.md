@@ -5,7 +5,10 @@ The shell script in the analyze.sh file has been written and executed in my Kali
 
 The first thing I did after creating the analyze.sh file with the complete script in it is go to the Kali command line and changed the directory to Desktop (cd Desktop), where the file was saved.
 
-I then used the command chmod +x analyze.sh to permit my current user to execute the shell script. Screenshot (753)
+I then used the command chmod +x analyze.sh to permit my current user to execute the shell script.
+
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/9dc9e9581dcc0547544a16914dd8d0678dcc276e/Question_1/Screenshot%202026-02-05%20220429.png)
+
 
 The first block of the shell script is to check for exactly one argument:
 
@@ -47,3 +50,4 @@ I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. 
 
 
 For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
+
