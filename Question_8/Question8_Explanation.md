@@ -25,5 +25,8 @@ Pauses the script execution and waits until all background processes finish. If 
 In summary, the script moves files concurrently using background processes, tracks their PIDs using $!, and synchronizes completion using wait.
 
 Execution steps and demonstration
-Used "chmod +x" to give execution permission, and executed the shell script. Screenshot (783)
+Used "chmod +x" to give execution permission, and executed the shell script.
+
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/3b33f0cdfedd08cc92d6581e16cb15ecfd49389f/Question_8/images8/Screenshot%202026-02-05%20233640.png)
+
 I used the dirB directory I created for Question 5 for demonstration here. After I executed the shell script and checked the directory, the backup sub-directory was created and the files had been moved into it. Screenshot (784) The shell script worked!
