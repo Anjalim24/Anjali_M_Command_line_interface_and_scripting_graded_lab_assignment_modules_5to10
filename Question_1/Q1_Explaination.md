@@ -12,24 +12,29 @@ I then used the command chmod +x analyze.sh to permit my current user to execute
 
 The first block of the shell script is to check for exactly one argument:
 
+
 <code>if [ $# -ne 1 ]; then
 echo "Error: Please provide exactly one argument."
 exit 1
 fi<code>
 
+
 I used the command ./analyze.sh bandit ~/Downloads to analyze a file named "bandit" and a directory name "Downloads". The script is instructed to show an error message if there's more than one argument, and it does its job. Since there's two arguments given in the command, it shows the error message.
 
-Screenshot (758)
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/7f4abae26d8bacd7a23bfa3ce95aa3eec6b3b6c4/Question_1/Screenshot%202026-02-05%20221613.png)
 On the above image, you can see that I also used the command ./analyze.sh Downloads to test the second part of the script to check if the path exists:
+
 
 <code>if [ ! -e "$1" ]; then
 echo "Error: Path does not exist."
 exit 1
 fi<code>
 
+
 Since I'm in the Desktop directory and there's no direct pathway to Downloads from there unless I include the complete pathway ~/Downloads, it shows an error, just as the script instructs it to, because the path Downloads doesn't exist in the Desktop directory.
 
 The third part of the script checks if it's a file.
+
 
 <code>if [ -f "$1" ]; then
 echo "File Analysis:"
@@ -37,19 +42,23 @@ echo "Lines: $(wc -l < "$1")"
 echo "Words: $(wc -w < "$1")"
 echo "Characters: $(wc -c < "$1")"<code>
 
+
 I used the command ./analyze.sh bandit to analyze the file name bandit. The result I got is given in the screenshot below: Screenshot (754)
 
 If it was not a file, it will move on to the final part that checks if it's a directory
+
 
 <code>elif [ -d "$1" ]; then
 echo "Directory Analysis:"
 echo "Total files: $(ls -l "$1" | grep "^-" | wc -l)"
 echo ".txt files: $(ls "$1"/*.txt 2>/dev/null | wc -l)"<code>
 
+
 I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. The first image shows my Download directory results with no .txt files, and the second image shows the result after I added a txt file. Screenshot (756) Screenshot (757)
 
 
 For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
+
 
 
 
