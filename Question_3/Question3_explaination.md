@@ -44,4 +44,5 @@ chmod +x validate_results.sh
 
 ./validate_results.sh marks.txt
 
-Screenshot (764)
+
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/f5df28f59162ae72d54ebd4cb7aa0971c2a44381/Question_3/images_3/Screenshot%202026-02-05%20225049.png)
