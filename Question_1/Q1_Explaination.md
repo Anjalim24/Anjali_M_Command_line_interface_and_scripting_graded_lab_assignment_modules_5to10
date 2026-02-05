@@ -55,11 +55,6 @@ echo "Total files: $(ls -l "$1" | grep "^-" | wc -l)"
 echo ".txt files: $(ls "$1"/*.txt 2>/dev/null | wc -l)"</code>
 
 
-I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. The first image shows my Download directory results with no .txt files, and the second image shows the result after I added a txt file. 
-
-![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/f084c982653a81715b285843a6d9e1c6bd248a17/Question_1/Screenshot%202026-02-05%20222452.png)
-
-![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/a137ab946792967f15aee9f1e86efc4b1b37de01/Question_1/Screenshot%202026-02-05%20222718.png)
 
 
 
