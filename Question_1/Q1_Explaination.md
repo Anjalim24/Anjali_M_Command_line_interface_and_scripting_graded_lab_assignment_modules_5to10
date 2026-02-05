@@ -1,0 +1,47 @@
+Answer 1 Explanation
+The shell script in the analyze.sh file has been written and executed in my Kali Linux VM to check if it was working. You can find a detailed explanation for every command executed to check whether each of the shell script blocks is working. 
+Screenshot (752)
+
+The first thing I did after creating the analyze.sh file with the complete script in it is go to the Kali command line and changed the directory to Desktop (cd Desktop), where the file was saved.
+
+I then used the command chmod +x analyze.sh to permit my current user to execute the shell script. Screenshot (753)
+
+The first block of the shell script is to check for exactly one argument:
+
+if [ $# -ne 1 ]; then
+echo "Error: Please provide exactly one argument."
+exit 1
+fi
+
+I used the command ./analyze.sh bandit ~/Downloads to analyze a file named "bandit" and a directory name "Downloads". The script is instructed to show an error message if there's more than one argument, and it does its job. Since there's two arguments given in the command, it shows the error message.
+
+Screenshot (758)
+On the above image, you can see that I also used the command ./analyze.sh Downloads to test the second part of the script to check if the path exists:
+
+if [ ! -e "$1" ]; then
+echo "Error: Path does not exist."
+exit 1
+fi
+
+Since I'm in the Desktop directory and there's no direct pathway to Downloads from there unless I include the complete pathway ~/Downloads, it shows an error, just as the script instructs it to, because the path Downloads doesn't exist in the Desktop directory.
+
+The third part of the script checks if it's a file.
+
+if [ -f "$1" ]; then
+echo "File Analysis:"
+echo "Lines: $(wc -l < "$1")"
+echo "Words: $(wc -w < "$1")"
+echo "Characters: $(wc -c < "$1")"
+
+I used the command ./analyze.sh bandit to analyze the file name bandit. The result I got is given in the screenshot below: Screenshot (754)
+
+If it was not a file, it will move on to the final part that checks if it's a directory
+
+elif [ -d "$1" ]; then
+echo "Directory Analysis:"
+echo "Total files: $(ls -l "$1" | grep "^-" | wc -l)"
+echo ".txt files: $(ls "$1"/*.txt 2>/dev/null | wc -l)"
+
+I used the command ./analyze.sh ~/Downloads to analyze the Downloads directory. The first image shows my Download directory results with no .txt files, and the second image shows the result after I added a txt file. Screenshot (756) Screenshot (757)
+
+For additional checks, I have also analyzed an empty file and an empty directory: Screenshot (759)
