@@ -23,4 +23,7 @@ I first wrote the shell script and then I created the lyrics.txt file for demosn
 
 ![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/794eee92bb481602538873479dc099566fb971a7/Question_7/images7/Screenshot%202026-02-05%20232602.png)
 
-I then used the command chmod and gave permission to run the script. After running the script, all three of the text files get created. Screenshot (782)
+I then used the command chmod and gave permission to run the script. After running the script, all three of the text files get created.
+
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/94d2bafb73763edb3938942c55a571d2a9a9380b/Question_7/images7/Screenshot%202026-02-05%20232652.png)
+
