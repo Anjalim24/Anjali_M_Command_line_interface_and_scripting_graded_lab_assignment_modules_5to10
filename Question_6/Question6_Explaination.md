@@ -1,26 +1,26 @@
 Answer 6 Explanation
 Question 6 folder contains the shell script "metrics.sh" and the text file "input.txt" I created to demonstrate this assignment question.
 The shell script command explanation
-1 words=$(tr -cs 'a-zA-Z' '\n' < input.txt)
+1 <code>words=$(tr -cs 'a-zA-Z' '\n' < input.txt)</code>
 Converts text into one word per line and stores it in the variable words
 
-2 echo "Longest word:"
-echo "$words" | awk '{ print length, $0 }' | sort -nr | head -1 | cut -d" " -f2
+2 <code>echo "Longest word:"
+echo "$words" | awk '{ print length, $0 }' | sort -nr | head -1 | cut -d" " -f2</code>
 
 Prints the lenght of each word, then sorts it in reverse order (largest to smallest), takes the longest, removes the lenght and only shows the word.
 
-3 echo "Shortest word:"
-echo "$words" | awk '{ print length, $0 }' | sort -n | head -1 | cut -d" " -f2
+3 <code>echo "Shortest word:"
+echo "$words" | awk '{ print length, $0 }' | sort -n | head -1 | cut -d" " -f2</code>
 
 Pretty much the same as the longest word, except this time there's no -r, hence the smallest comes first, and displays the smallest word.
 
-4 echo "Average word length:"
-echo "$words" | awk '{ sum += length; count++ } END { print sum/count }'
+4 <code>echo "Average word length:"
+echo "$words" | awk '{ sum += length; count++ } END { print sum/count }'</code>
 
-sum += lenght adds all the characters and gives the total number of characters, count++ counts the number of words, END after processing all lines and then calculate the average sum/count
+<code>sum += length</code> adds all the characters and gives the total number of characters, <code>count++</code> counts the number of words, END after processing all lines and then calculate the average <code>sum/count</code>
 
-5 echo "Total unique words:"
-echo "$words" | sort | uniq | wc -l
+5 <code>echo "Total unique words:"
+echo "$words" | sort | uniq | wc -l</code>
 
 sort groups the duplicates, uniq removes the duplicates, and wc -l counts the remaining lines.
 
@@ -41,5 +41,6 @@ And finally, used the command chmod to give permission to execute the shell scri
 
 
 The output gave the longest word, the shortest word, average word length, and total unique words. The shell script worked!
+
 
 
