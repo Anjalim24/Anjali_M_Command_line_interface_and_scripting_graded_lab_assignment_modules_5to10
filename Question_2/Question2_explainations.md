@@ -53,8 +53,6 @@ Once this shell script was created in my Kali Linux, I saved it in my Kali Deskt
 
 ![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/3e6382a271af7e928cec0e4fc6bf5605172ccc07/Question_2/images/Screenshot%202026-02-05%20223830.png)
 
-I then proceeded to use the command "./loganalysis.sh systemlog.log". The shell script created worked perfectly and provided the proper txt report file with all the required details.
 
-![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/168b173c72d530299b22690ea9d1502cdf244e5a/Question_2/images/Screenshot%202026-02-05%20224114.png)
 
 
