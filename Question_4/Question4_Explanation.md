@@ -39,4 +39,5 @@ This is the text file created with all the valid, invalid, and duplicate emails 
 Once I run the script after using the chmod command, and then using the ./emailcleaner.sh emails.txt command, I get valid.txt and invalid.txt automatically created in my system, with the proper email classification.
 
 
-Screenshot (765)
+![image alt](https://github.com/Anjalim24/Anjali_M_Command_line_interface_and_scripting_graded_lab_assignment_modules_5to10/blob/4069a4e703dd50c20efe2281051679001f1f1c33/Question_4/images4/Screenshot%202026-02-05%20230235.png)
+
